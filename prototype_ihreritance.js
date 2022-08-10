@@ -28,3 +28,17 @@ const c1 = new Circle(1);
 const c2 = new Circle(2);
 
 console.log(c1.toString());
+
+// Iterating over instance and prototype members.
+// This way I'm not able to see prototype members.
+console.log(Object.keys(c1));
+
+// This way we're able to see prototype members.
+for (let prop in c1) {
+    console.log(prop);
+}
+
+// Remembering that I'm not able to see built-in members because the
+// property enumerable true.
+
+
