@@ -1,28 +1,29 @@
 
 function Stopwatch() {
-    this._startPoint = 0;
-    this._stopPoint = 0;
-    this._duration = 0;
-    this._running = false;
+    self = this;
+    self._startPoint = 0;
+    self._stopPoint = 0;
+    self._duration = 0;
+    self._running = false;
 
-    Object.defineProperty(this, 'startPoint', {
+    Object.defineProperty(self, 'startPoint', {
         get: function () {
-            return this._startPoint;
+            return self._startPoint;
         }
     });
-    Object.defineProperty(this, 'endPoint', {
+    Object.defineProperty(self, 'endPoint', {
         get: function () {
-            return this._startPoint;
+            return self._startPoint;
         }
     });
-    Object.defineProperty(this, 'duration', {
+    Object.defineProperty(self, 'duration', {
         get: function() {
-            return this._duration;
+            return self._duration;
         }
     });
-    Object.defineProperty(this, 'running', {
+    Object.defineProperty(self, 'running', {
         get: function () {
-            return this._running;
+            return self._running;
         }
     });
 };
