@@ -16,7 +16,7 @@ class Stack {
     pop() {
         const items = _items.get(this);
         if (items.length === 0) throw new Error('Stack is empty');
-        return _items.get(this).pop();
+        return items.pop();
     }
     get count() {
         return _items.get(this).length;
